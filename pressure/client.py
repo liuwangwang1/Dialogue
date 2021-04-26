@@ -16,5 +16,5 @@ class WebsiteUser(HttpUser):
         params = gen_order_params()
         body = convert_to_params(params)
         headers = {}
-        endpoint = "http://www.xxxx.xxx"
+        endpoint = "http://www.xxxx.xxx/"
         self.client.post(url=endpoint, headers=headers, data=json.dumps(body), )
